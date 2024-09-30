@@ -74,10 +74,10 @@ function App() {
             We don't just teach students, but we train them to be successful professionals. We motivate and orient our students and to take on the corporate world.
             </p>
             <div className="flex flex-row">
-              <button className="bg-[#0048ff] hover:bg-[#0431a2] border-solid border-2 border-inherit  text-white font-semibold py-2 px-6 rounded flex items-center ">
+              <button className="bg-[#0048ff] hover:bg-[#0431a2] border-solid border-2 border-inherit  text-white font-semibold py-2 px-lg-6 px-3 rounded flex items-center ">
               Brochure <span className='ps-[8px]'><MdOutlineDownloading/></span> 
               </button>
-              <button className="bg-[transparent] hover:bg-[#0431a2] border-solid border-2 border-inherit mx-4 text-white font-semibold py-2 px-6 rounded">
+              <button className="bg-[transparent] hover:bg-[#0431a2] border-solid border-2 border-inherit mx-4 text-white font-semibold py-2 px-lg-6 px-3 rounded">
               Admission Open 2024
               </button>
             </div>
