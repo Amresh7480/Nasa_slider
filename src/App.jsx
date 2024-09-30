@@ -7,6 +7,7 @@ import './App.css'
 import slider_img1 from '../src/assets/img/slider_img1_l.png'
 import slider_img2 from '../src/assets/img/slider_img2_l.png'
 import slider_img3 from '../src/assets/img/slider_img3_l.png'
+import { MdOutlineDownloading } from "react-icons/md";
 function App() {
   const images = [
     slider_img1,
@@ -17,6 +18,10 @@ function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
+
+  const handleRedirect = () => {
+    window.location.href = "/"; // External URL or internal route
+  };
 
   // Effect to handle the image change and progress bar
   useEffect(() => {
@@ -59,33 +64,22 @@ function App() {
         {/*Div 1*/}
         <div className="flex flex-row bg-black-500 text-white  items-center justify-start h-screen lg:w-2/3 ">
           <div className="mx-4">
+          <p className="text-lg md:text-2xl mb-8 font-bold	">
+             <span className='border-b-[2px] cursor-pointer' onClick={handleRedirect}>Admission Open 2024</span> 
+            </p>
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
-              NASA's Europa Clipper
+            Best College in Jaipur Arya College
             </h1>
             <p className="text-lg md:text-2xl mb-8">
-              Earth's first mission to conduct detailed reconnaissance of
-              Jupiter's moon, Europa.
+            We don't just teach students, but we train them to be successful professionals. We motivate and orient our students and to take on the corporate world.
             </p>
             <div className="flex flex-row">
-              <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded">
-                The Mission
+              <button className="bg-[#0048ff] hover:bg-[#0431a2] border-solid border-2 border-inherit  text-white font-semibold py-2 px-6 rounded flex items-center ">
+              Brochure <span className='ps-[8px]'><MdOutlineDownloading/></span> 
               </button>
-              <button className="bg-white mx-4 hover:bg-white-300 text-red-600 font-semibold py-2 px-6 rounded">
-                The Mission
+              <button className="bg-[transparent] hover:bg-[#0431a2] border-solid border-2 border-inherit mx-4 text-white font-semibold py-2 px-6 rounded">
+              Admission Open 2024
               </button>
-            </div>
-            <div className="flex flex-col my-5 lg:flex-row lg:h-64 lg:overflow-hidden">
-              <Card
-                heading="Admission Stats"
-                text="Know everything regarindg fdfdfd"
-                url="https://google.com"
-              />
-
-              <Card
-                heading="Admission Stats"
-                text="Know everything regarindg fdfdfd"
-                url="https://google.com"
-              />
             </div>
           </div>
         </div>
