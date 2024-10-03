@@ -19,8 +19,8 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
 
-  const handleRedirect = () => {
-    window.location.href = "/"; // External URL or internal route
+  const handleRedirect = (url) => {
+    window.location.href = url; // External URL or internal route
   };
 
   // Effect to handle the image change and progress bar
@@ -65,7 +65,7 @@ function App() {
         <div className="flex flex-row bg-black-500 text-white  items-center justify-start h-screen lg:w-2/3 ">
           <div className="mx-4">
           <p className="text-lg md:text-2xl mb-8 font-bold	">
-             <span className='border-b-[2px] cursor-pointer' onClick={handleRedirect}>Admission Open 2024</span> 
+             <span className='border-b-[2px] cursor-pointer' onClick={()=>handleRedirect('https://www.aryainstitutejpr.com/')}>Admission Open 2024</span> 
             </p>
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
             Best College in Jaipur Arya College
@@ -74,10 +74,10 @@ function App() {
             We don't just teach students, but we train them to be successful professionals. We motivate and orient our students and to take on the corporate world.
             </p>
             <div className="flex flex-row">
-              <button className="bg-[#0048ff] hover:bg-[#0431a2] border-solid border-2 border-inherit  text-white font-semibold py-2 px-lg-6 px-3 rounded flex items-center ">
+              <button className="bg-[#0048ff] hover:bg-[#0431a2] border-solid border-2 border-inherit  text-white font-semibold py-2 px-lg-6 px-3 rounded flex items-center " onClick={()=>handleRedirect('https://www.aryainstitutejpr.com/')}>
               Brochure <span className='ps-[8px]'><MdOutlineDownloading/></span> 
               </button>
-              <button className="bg-[transparent] hover:bg-[#0431a2] border-solid border-2 border-inherit mx-4 text-white font-semibold py-2 px-lg-6 px-3 rounded">
+              <button className="bg-[transparent] hover:bg-[#0431a2] border-solid border-2 border-inherit mx-4 text-white font-semibold py-2 px-lg-6 px-3 rounded" onClick={()=>handleRedirect('https://www.aryainstitutejpr.com/')}>
               Admission Open 2024
               </button>
             </div>
